@@ -1,0 +1,236 @@
+/* Geral */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans PRO', sans-serif;
+}
+.azul{
+    color: dodgerblue;
+}
+.largura{
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1224px;
+}
+.informacoes{
+    padding: clamp(20px, 4vw, 40px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.informacoes h2{
+    font-size: clamp(24px, 5vw, 36px);
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+.informacoes p{
+    font-size: clamp(14px, 3vw, 20px);
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+/* Topo */
+.topo{
+    position: fixed;
+    z-index: 1;
+    background-color: #efefef;
+    width: 100%;
+}
+.sub-topo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+.topo-1 .topo-2{
+    flex: 1 0 50%;
+}
+.topo-1 a{
+    font-size: clamp(20px, 3vw, 28px);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.topo-2 a{
+    color: black;
+    text-decoration: none;
+    margin-left: clamp(10px, 2vw, 25px);
+    font-size: clamp(14px, 2vw, 18px);
+}
+.topo-2 a:hover, .topo-1 a:hover{
+    text-decoration: underline #000 2px solid
+}
+
+/* Banner */
+.banner{ 
+    background-image: url(img-fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+}
+.banner div{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    height: 30%;
+    border: 1px solid #fff;
+    background-color: rgba(10, 225, 2, 0.5);
+}
+.banner h1{
+    font-size: clamp(32px, 6vw, 64px);
+    margin-bottom: 20px;
+}
+.banner p{
+    font-size: clamp(16px, 3vw, 24px);
+}
+
+/* Quartos */
+.quartos{
+    padding: clamp(20px, 4vw, 40px);
+    text-align: center;
+    height: auto;
+}
+.contanier{
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(5px, 2vw, 20px);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.card{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: clamp(10px, 2vw, 20px);
+    height: 50%;
+    text-align: center;
+    flex: 1 0 30%;
+    border-bottom: #04ff 2px solid;
+}
+.card img{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 10px;
+}
+.card a{
+    text-decoration: none;
+    color: black;
+    font-size: clamp(16px, 3vw, 20px);
+    font-weight: bold;
+}
+.card a:hover{
+    text-decoration: underline #000 2px solid;
+}
+
+/* Sobre */
+.sobre{
+    padding: clamp(20px, 4vw, 40px);
+    text-align: center;
+    height: auto;
+}
+.card-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50%;
+    text-align: center;
+    flex: 1 0 30%;
+    flex-wrap: wrap;
+}
+.card-2 div{
+    flex: 1 0 22%;
+    height: 30%;
+    padding: clamp(10px, 2vw, 20px);
+    margin-bottom: 20px;
+}
+.card-2 img{
+    width: 160px; 
+    height: 140px;
+    margin: 0 0 6px 0;
+    border-radius: 8px;
+}
+.card-2 h3{
+    font-size: clamp(20px, 3vw, 28px);
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+.card-2 p{
+    font-size: clamp(14px, 2.2vw, 16px);
+    font-weight: lighter;
+    text-align: left;
+}
+
+/* Rodapé */
+.rodape{
+    background-color: #00c8a0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    color: #fff;
+    gap: 20px;
+    width: 100%;
+    font-weight: bold;
+    padding: clamp(20px, 4vw, 30px);
+}
+.card-3{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: clamp(10px, 2vw, 20px);
+    margin-bottom: 10px;
+    width: 250px;
+}
+.card-3 img{
+    width: 40px; 
+    height: 40px;
+}
+.card-3 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: clamp(14px, 2.2vw, 20px);
+    font-weight: lighter;
+}
+.card-3 a:hover{
+    text-decoration: underline #fff 2px solid;
+}
+.contato{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: #000 1px solid;
+}
+.contato h4{
+    font-size: clamp(20px, 3vw, 30px);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.contato p{
+    font-size: clamp(14px, 2.2vw, 22px);
+    font-weight: lighter;
+}
+.final{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+.final p{
+    font-size: clamp(14px, 2.2vw, 18px);
+}

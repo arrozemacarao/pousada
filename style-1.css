@@ -1,0 +1,190 @@
+/* Geral */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans PRO', sans-serif;
+}
+.largura{
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1224px;
+    padding: 30px;
+}
+.azul{
+    color: dodgerblue;
+}
+.informacoes{
+    padding: clamp(20px, 4vw, 40px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.informacoes h2{
+    font-size: clamp(24px, 5vw, 36px);
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+.informacoes p{
+    font-size: clamp(14px, 3vw, 20px);
+    margin-bottom: 10px;
+    font-weight: lighter;
+}
+
+/* Topo */
+.topo{
+    position: fixed;
+    z-index: 1;
+    background-color: #efefef;
+    width: 100%;
+}
+.sub-topo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+.topo-1 .topo-2{
+    flex: 1 0 50%;
+}
+.topo-1 a{
+    font-size: clamp(20px, 3vw, 28px);
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.topo-2 a{
+    color: black;
+    text-decoration: none;
+    margin-left: clamp(10px, 2vw, 25px);
+    font-size: clamp(14px, 2vw, 18px);
+}
+.topo-2 a:hover, .topo-1 a:hover{
+    text-decoration: underline #000 2px solid
+}
+
+/* Banner */
+.banner{
+    width: 100%;
+    height: 300px;
+    background-image: url('img-fundo.jpg');
+    background-size: cover;
+    background-position:  top center;
+}
+/* Cards */
+.contanier{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: clamp(20px, 4vw, 40px);
+    padding: clamp(20px, 4vw, 40px);
+}
+.contanier  div{
+    width: clamp(250px, 30vw, 300px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.contanier img{
+    width: 100%;
+    height: 280PX;
+    display: block;
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(20px, 4vw, 30px);
+    gap: clamp(10px, 2vw, 15px);
+    width: 80%;
+    margin: 0 auto;
+}
+.lista h3{
+    font-size: clamp(20px, 4vw, 28px);
+    margin-bottom: 10px;
+}
+.lista ul{
+    list-style-type: disc;
+    padding-left: clamp(20px, 4vw, 30px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: clamp(10px, 2vw, 15px);
+}
+.lista ul li{
+    font-size: clamp(14px, 2.5vw, 20px);
+    width: clamp(120px, 40%, 200px);
+    font-weight: lighter;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+/* Rodapé */
+.rodape{
+    background-color: #00c8a0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    color: #fff;
+    gap: 20px;
+    width: 100%;
+    font-weight: bold;
+    padding: clamp(20px, 4vw, 30px);
+}
+.card-3{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: clamp(10px, 2vw, 20px);
+    margin-bottom: 10px;
+    width: 250px;
+}
+.card-3 img{
+    width: 40px; 
+    height: 40px;
+}
+.card-3 a{
+    text-decoration: none;
+    color: #fff;
+    font-size: clamp(14px, 2.2vw, 20px);
+    font-weight: lighter;
+}
+.card-3 a:hover{
+    text-decoration: underline #fff 2px solid;
+}
+.contato{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap; 
+    gap: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-bottom: #000 1px solid;
+}
+.contato h4{
+    font-size: clamp(20px, 3vw, 30px);
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.contato p{
+    font-size: clamp(14px, 2.2vw, 22px);
+    font-weight: lighter;
+}
+.final{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+}
+.final p{
+    font-size: clamp(14px, 2.2vw, 18px);
+}
